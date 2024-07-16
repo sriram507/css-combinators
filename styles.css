@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+    width: 100vw; /* Full width of the viewport */
+    overflow-x: auto; /* Horizontal scrolling if needed */
+}
+
+.image-gallery {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between table cells */
+    table-layout: fixed; /* Fixed table layout for equal column widths */
+}
+
+.image-gallery td {
+    padding: 1vw; /* Padding using viewport width */
+    width: 33.33%; /* Each cell takes one-third of the table's width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.image-gallery img {
+    width: 100%; /* Image fills the cell width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+
+

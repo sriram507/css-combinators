@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+ <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.id-card {
+    display: flex;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.details {
+    padding: 20px;
+    flex: 1;
+}
+
+.details h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.details p {
+    margin: 10px 0 0;
+}
+
+.details p.title {
+    color: #777;
+    font-size: 1em;
+}
+
+.details p.contact {
+    margin-top: 20px;
+}
+
+.details p.contact span {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* CSS combinators */
+.id-card > .details > .name + .title {
+    margin-top: 10px;
+}
+
+.id-card > .details > .contact > .email ~ .phone {
+    margin-top: 5px;
+}
+
+.id-card > .details > .contact span:last-child {
+    font-weight: bold;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="id-card">
+        <div class="photo">
+            <img src="./acceptable-DV-lottery-photo-plain-white-background-with-natural-expression-sample-1.jpg" alt="Profile Photo">
+        </div>
+        <div class="details">
+            <h1 class="name">Harish M</h1>
+            <p class="title">Trainer</p>
+            <p class="contact">
+                <span class="email">HarishMtrainer@gmail.com</span><br>
+                <span class="phone">+918143655563</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
